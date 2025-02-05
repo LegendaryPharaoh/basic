@@ -1,0 +1,19 @@
+name: A basic flow
+on: push
+jobs:
+  job1:
+    name: first job to run
+    runs-on: ubuntu-latest #alwasys need what to run on
+    steps:
+      - name: step one
+        uses: actions/checkout@v4
+      - name: Step two
+        run: ls -la
+  job2:
+    name: second job to run
+    runs-on: windows-latest
+    steps:
+      - name: step one of job2
+        uses: actions/checout@v4
+      - name: step two of job2
+        run: pwd
