@@ -10,6 +10,7 @@ jobs:
       - name: Step two
         run: ls -la
       - name: Third step
+        run: pwd
   job2:
     name: second job to run
     runs-on: windows-latest
